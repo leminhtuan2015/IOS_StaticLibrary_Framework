@@ -12,5 +12,12 @@
 - (void)sayHello
 {
     NSLog( @" static lib Hello" );
+    
+    [self sayOK : 1 : 2];
+}
+
+- (void)sayOK : (int)number : (int)number2
+{
+    NSLog( @" static lib OK : %d , %d", number, number2 );
 }
 @end

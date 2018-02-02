@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface TestStaticLib : NSObject
-- ( void )sayHello;
+- (void)sayHello;
+- (void)sayOK : (int)number: (int)number2;
 @end
