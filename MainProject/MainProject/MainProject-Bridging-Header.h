@@ -8,5 +8,6 @@
 
 #import <TestStaticLib/TestStaticLib.h>
 #import <TestStaticLib/StaticLibrary.h>
-#import <TestStaticLibrary_1/TestStaticLibrary_1.h>
+#import "TestStaticLibrary_1.h"
+
 

@@ -373,6 +373,7 @@
 		A75CAA312021702100DDF94F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U62UST9Z6P;
@@ -381,7 +382,7 @@
 					"$(PROJECT_DIR)/Libs",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
 				);
-				HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
+				HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library/libTestStaticLibrary/Headers;
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -394,13 +395,14 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MainProject/MainProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
+				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library/;
 			};
 			name = Debug;
 		};
 		A75CAA322021702100DDF94F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U62UST9Z6P;
@@ -409,7 +411,7 @@
 					"$(PROJECT_DIR)/Libs",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
 				);
-				HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
+				HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library/libTestStaticLibrary/Headers;
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -421,7 +423,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
+				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library/;
 			};
 			name = Release;
 		};

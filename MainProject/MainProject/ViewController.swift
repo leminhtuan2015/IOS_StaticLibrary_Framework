@@ -19,12 +19,14 @@ class ViewController: UIViewController {
         let testStaticLib = TestStaticLib.init()
         let staticLibrary = StaticLibrary.init()
         let testFrameworkObjectiveC = TestFrameworkObjectiveC.init()
+        let testStaticLibrary_1 = TestStaticLibrary_1.init()
         
         
         hello.hello()
         testStaticLib.sayHello()
         staticLibrary.sayGoodbye()
         testFrameworkObjectiveC.sayHi()
+        testStaticLibrary_1.sayHello()
         
     }
 

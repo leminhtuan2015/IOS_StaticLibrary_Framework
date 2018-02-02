@@ -11,6 +11,6 @@
 @implementation TestStaticLibrary_1
 - (void)sayHello
 {
-    NSLog( @" static lib Hello" );
+    NSLog( @" static lib TestStaticLibrary_1" );
 }
 @end
