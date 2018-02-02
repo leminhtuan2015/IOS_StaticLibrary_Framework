@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A78D50042023FA8300FB4739 /* StaticLibrary.m */; };
-		A78D500A202412E500FB4739 /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A78D500620240BE700FB4739 /* StaticLibrary.h */; };
+		A78D500B2024147D00FB4739 /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A78D500620240BE700FB4739 /* StaticLibrary.h */; };
 		A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE5378202199E3008FE192 /* TestStaticLib.m */; };
 		A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7BE5377202199E3008FE192 /* TestStaticLib.h */; };
 /* End PBXBuildFile section */
@@ -20,7 +20,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A78D500A202412E500FB4739 /* StaticLibrary.h in CopyFiles */,
+				A78D500B2024147D00FB4739 /* StaticLibrary.h in CopyFiles */,
 				A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
