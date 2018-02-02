@@ -9,7 +9,7 @@
 #import "TestStaticLib.h"
 
 @implementation TestStaticLib
-- ( void )sayHello
+- (void)sayHello
 {
     NSLog( @" static lib Hello" );
 }

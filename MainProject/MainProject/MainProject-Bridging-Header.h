@@ -7,3 +7,5 @@
 //
 
 #import <TestStaticLib/TestStaticLib.h>
+#import <TestStaticLib/StaticLibrary.h>
+

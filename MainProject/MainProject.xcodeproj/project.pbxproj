@@ -12,7 +12,7 @@
 		A75CAA272021702100DDF94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75CAA252021702100DDF94F /* Main.storyboard */; };
 		A75CAA292021702100DDF94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75CAA282021702100DDF94F /* Assets.xcassets */; };
 		A75CAA2C2021702100DDF94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75CAA2A2021702100DDF94F /* LaunchScreen.storyboard */; };
-		A7BE544E2021C1C4008FE192 /* libTestStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE544D2021C07E008FE192 /* libTestStaticLib.a */; };
+		A78D50092024120800FB4739 /* libTestStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE544D2021C07E008FE192 /* libTestStaticLib.a */; };
 		A7BE54872021CC74008FE192 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE534D20217B6A008FE192 /* TestFramework.framework */; };
 		A7BE54882021CC74008FE192 /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE534D20217B6A008FE192 /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7BE544E2021C1C4008FE192 /* libTestStaticLib.a in Frameworks */,
+				A78D50092024120800FB4739 /* libTestStaticLib.a in Frameworks */,
 				A7BE54872021CC74008FE192 /* TestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

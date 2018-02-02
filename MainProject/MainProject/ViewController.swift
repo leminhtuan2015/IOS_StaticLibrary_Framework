@@ -14,11 +14,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let x = Hello.init()
+        let hello = Hello.init()
+        let testStaticLib = TestStaticLib.init()
+        let staticLibrary = StaticLibrary.init()
         
-        x.hello()
-
-        TestStaticLib.init().sayHello()
+        
+        hello.hello()
+        testStaticLib.sayHello()
+        staticLibrary.sayGoodbye()
         
     }
 

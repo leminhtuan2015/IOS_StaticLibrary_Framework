@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A78D50042023FA8300FB4739 /* StaticLibrary.m */; };
+		A78D500A202412E500FB4739 /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A78D500620240BE700FB4739 /* StaticLibrary.h */; };
 		A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE5378202199E3008FE192 /* TestStaticLib.m */; };
 		A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7BE5377202199E3008FE192 /* TestStaticLib.h */; };
 /* End PBXBuildFile section */
@@ -18,6 +20,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				A78D500A202412E500FB4739 /* StaticLibrary.h in CopyFiles */,
 				A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -25,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A78D50042023FA8300FB4739 /* StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibrary.m; sourceTree = "<group>"; };
+		A78D500620240BE700FB4739 /* StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
 		A7BE5374202199E3008FE192 /* libTestStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BE5377202199E3008FE192 /* TestStaticLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStaticLib.h; sourceTree = "<group>"; };
 		A7BE5378202199E3008FE192 /* TestStaticLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStaticLib.m; sourceTree = "<group>"; };
@@ -62,6 +67,8 @@
 			children = (
 				A7BE5377202199E3008FE192 /* TestStaticLib.h */,
 				A7BE5378202199E3008FE192 /* TestStaticLib.m */,
+				A78D500620240BE700FB4739 /* StaticLibrary.h */,
+				A78D50042023FA8300FB4739 /* StaticLibrary.m */,
 			);
 			path = TestStaticLib;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */,
+				A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
