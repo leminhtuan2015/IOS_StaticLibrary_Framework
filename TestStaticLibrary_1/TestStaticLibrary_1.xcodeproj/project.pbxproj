@@ -7,36 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A78D50042023FA8300FB4739 /* StaticLibrary.m */; };
-		A78D503C2024380500FB4739 /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A78D500620240BE700FB4739 /* StaticLibrary.h */; };
-		A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE5378202199E3008FE192 /* TestStaticLib.m */; };
-		A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7BE5377202199E3008FE192 /* TestStaticLib.h */; };
+		A78D50672024410800FB4739 /* TestStaticLibrary_1.m in Sources */ = {isa = PBXBuildFile; fileRef = A78D50662024410800FB4739 /* TestStaticLibrary_1.m */; };
+		A78D50682024410800FB4739 /* TestStaticLibrary_1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A78D50652024410800FB4739 /* TestStaticLibrary_1.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A7BE5372202199E3008FE192 /* CopyFiles */ = {
+		A78D50602024410800FB4739 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A78D503C2024380500FB4739 /* StaticLibrary.h in CopyFiles */,
-				A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */,
+				A78D50682024410800FB4739 /* TestStaticLibrary_1.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A78D50042023FA8300FB4739 /* StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibrary.m; sourceTree = "<group>"; };
-		A78D500620240BE700FB4739 /* StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
-		A7BE5374202199E3008FE192 /* libTestStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7BE5377202199E3008FE192 /* TestStaticLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStaticLib.h; sourceTree = "<group>"; };
-		A7BE5378202199E3008FE192 /* TestStaticLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStaticLib.m; sourceTree = "<group>"; };
+		A78D50622024410800FB4739 /* libTestStaticLibrary_1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestStaticLibrary_1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78D50652024410800FB4739 /* TestStaticLibrary_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStaticLibrary_1.h; sourceTree = "<group>"; };
+		A78D50662024410800FB4739 /* TestStaticLibrary_1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStaticLibrary_1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7BE5371202199E3008FE192 /* Frameworks */ = {
+		A78D505F2024410800FB4739 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,100 +41,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7BE536B202199E3008FE192 = {
+		A78D50592024410800FB4739 = {
 			isa = PBXGroup;
 			children = (
-				A7BE5376202199E3008FE192 /* TestStaticLib */,
-				A7BE5375202199E3008FE192 /* Products */,
+				A78D50642024410800FB4739 /* TestStaticLibrary_1 */,
+				A78D50632024410800FB4739 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A7BE5375202199E3008FE192 /* Products */ = {
+		A78D50632024410800FB4739 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7BE5374202199E3008FE192 /* libTestStaticLib.a */,
+				A78D50622024410800FB4739 /* libTestStaticLibrary_1.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7BE5376202199E3008FE192 /* TestStaticLib */ = {
+		A78D50642024410800FB4739 /* TestStaticLibrary_1 */ = {
 			isa = PBXGroup;
 			children = (
-				A7BE5377202199E3008FE192 /* TestStaticLib.h */,
-				A7BE5378202199E3008FE192 /* TestStaticLib.m */,
-				A78D500620240BE700FB4739 /* StaticLibrary.h */,
-				A78D50042023FA8300FB4739 /* StaticLibrary.m */,
+				A78D50652024410800FB4739 /* TestStaticLibrary_1.h */,
+				A78D50662024410800FB4739 /* TestStaticLibrary_1.m */,
 			);
-			path = TestStaticLib;
+			path = TestStaticLibrary_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7BE5373202199E3008FE192 /* TestStaticLib */ = {
+		A78D50612024410800FB4739 /* TestStaticLibrary_1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7BE537D202199E3008FE192 /* Build configuration list for PBXNativeTarget "TestStaticLib" */;
+			buildConfigurationList = A78D506B2024410800FB4739 /* Build configuration list for PBXNativeTarget "TestStaticLibrary_1" */;
 			buildPhases = (
-				A7BE5370202199E3008FE192 /* Sources */,
-				A7BE5371202199E3008FE192 /* Frameworks */,
-				A7BE5372202199E3008FE192 /* CopyFiles */,
+				A78D505E2024410800FB4739 /* Sources */,
+				A78D505F2024410800FB4739 /* Frameworks */,
+				A78D50602024410800FB4739 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestStaticLib;
-			productName = TestStaticLib;
-			productReference = A7BE5374202199E3008FE192 /* libTestStaticLib.a */;
+			name = TestStaticLibrary_1;
+			productName = TestStaticLibrary_1;
+			productReference = A78D50622024410800FB4739 /* libTestStaticLibrary_1.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A7BE536C202199E3008FE192 /* Project object */ = {
+		A78D505A2024410800FB4739 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Fuji;
 				TargetAttributes = {
-					A7BE5373202199E3008FE192 = {
+					A78D50612024410800FB4739 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = A7BE536F202199E3008FE192 /* Build configuration list for PBXProject "TestStaticLib" */;
+			buildConfigurationList = A78D505D2024410800FB4739 /* Build configuration list for PBXProject "TestStaticLibrary_1" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A7BE536B202199E3008FE192;
-			productRefGroup = A7BE5375202199E3008FE192 /* Products */;
+			mainGroup = A78D50592024410800FB4739;
+			productRefGroup = A78D50632024410800FB4739 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7BE5373202199E3008FE192 /* TestStaticLib */,
+				A78D50612024410800FB4739 /* TestStaticLibrary_1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7BE5370202199E3008FE192 /* Sources */ = {
+		A78D505E2024410800FB4739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */,
-				A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */,
+				A78D50672024410800FB4739 /* TestStaticLibrary_1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A7BE537B202199E3008FE192 /* Debug */ = {
+		A78D50692024410800FB4739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -194,7 +185,7 @@
 			};
 			name = Debug;
 		};
-		A7BE537C202199E3008FE192 /* Release */ = {
+		A78D506A2024410800FB4739 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,35 +234,26 @@
 			};
 			name = Release;
 		};
-		A7BE537E202199E3008FE192 /* Debug */ = {
+		A78D506C2024410800FB4739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U62UST9Z6P;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TestStaticLib/TestStaticLib-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A7BE537F202199E3008FE192 /* Release */ = {
+		A78D506D2024410800FB4739 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U62UST9Z6P;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TestStaticLib/TestStaticLib-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -279,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7BE536F202199E3008FE192 /* Build configuration list for PBXProject "TestStaticLib" */ = {
+		A78D505D2024410800FB4739 /* Build configuration list for PBXProject "TestStaticLibrary_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7BE537B202199E3008FE192 /* Debug */,
-				A7BE537C202199E3008FE192 /* Release */,
+				A78D50692024410800FB4739 /* Debug */,
+				A78D506A2024410800FB4739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7BE537D202199E3008FE192 /* Build configuration list for PBXNativeTarget "TestStaticLib" */ = {
+		A78D506B2024410800FB4739 /* Build configuration list for PBXNativeTarget "TestStaticLibrary_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7BE537E202199E3008FE192 /* Debug */,
-				A7BE537F202199E3008FE192 /* Release */,
+				A78D506C2024410800FB4739 /* Debug */,
+				A78D506D2024410800FB4739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A7BE536C202199E3008FE192 /* Project object */;
+	rootObject = A78D505A2024410800FB4739 /* Project object */;
 }

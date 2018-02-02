@@ -8,6 +8,7 @@
 
 import UIKit
 import TestFramework
+import TestFrameworkObjectiveC
 
 class ViewController: UIViewController {
 
@@ -17,11 +18,13 @@ class ViewController: UIViewController {
         let hello = Hello.init()
         let testStaticLib = TestStaticLib.init()
         let staticLibrary = StaticLibrary.init()
+        let testFrameworkObjectiveC = TestFrameworkObjectiveC.init()
         
         
         hello.hello()
         testStaticLib.sayHello()
         staticLibrary.sayGoodbye()
+        testFrameworkObjectiveC.sayHi()
         
     }
 

@@ -13,7 +13,8 @@
 		A75CAA292021702100DDF94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75CAA282021702100DDF94F /* Assets.xcassets */; };
 		A75CAA2C2021702100DDF94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75CAA2A2021702100DDF94F /* LaunchScreen.storyboard */; };
 		A78D50092024120800FB4739 /* libTestStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE544D2021C07E008FE192 /* libTestStaticLib.a */; };
-		A7BE54872021CC74008FE192 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE534D20217B6A008FE192 /* TestFramework.framework */; };
+		A78D5058202439D500FB4739 /* TestFrameworkObjectiveC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78D5054202439A300FB4739 /* TestFrameworkObjectiveC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A78D507320244A3100FB4739 /* libTestStaticLibrary_1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78D50712024425600FB4739 /* libTestStaticLibrary_1.a */; };
 		A7BE54882021CC74008FE192 /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7BE534D20217B6A008FE192 /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A7BE54882021CC74008FE192 /* TestFramework.framework in Embed Frameworks */,
+				A78D5058202439D500FB4739 /* TestFrameworkObjectiveC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +51,9 @@
 		A75CAA282021702100DDF94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75CAA2B2021702100DDF94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75CAA2D2021702100DDF94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78D5054202439A300FB4739 /* TestFrameworkObjectiveC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFrameworkObjectiveC.framework; sourceTree = "<group>"; };
+		A78D50702024425600FB4739 /* TestStaticLibrary_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStaticLibrary_1.h; sourceTree = "<group>"; };
+		A78D50712024425600FB4739 /* libTestStaticLibrary_1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestStaticLibrary_1.a; sourceTree = "<group>"; };
 		A7BE534D20217B6A008FE192 /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework.framework; sourceTree = "<group>"; };
 		A7BE54482021C07E008FE192 /* TestStaticLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestStaticLib.xcodeproj; path = ../../TestStaticLib/TestStaticLib.xcodeproj; sourceTree = "<group>"; };
 		A7BE54752021C7EC008FE192 /* MainProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainProject-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -59,8 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78D507320244A3100FB4739 /* libTestStaticLibrary_1.a in Frameworks */,
 				A78D50092024120800FB4739 /* libTestStaticLib.a in Frameworks */,
-				A7BE54872021CC74008FE192 /* TestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +107,29 @@
 		A75CAA6D202170F500DDF94F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A78D506E2024425600FB4739 /* libTestStaticLibrary */,
 				A7BE54482021C07E008FE192 /* TestStaticLib.xcodeproj */,
 				A7BE534D20217B6A008FE192 /* TestFramework.framework */,
+				A78D5054202439A300FB4739 /* TestFrameworkObjectiveC.framework */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		A78D506E2024425600FB4739 /* libTestStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A78D506F2024425600FB4739 /* Headers */,
+				A78D50712024425600FB4739 /* libTestStaticLibrary_1.a */,
+			);
+			path = libTestStaticLibrary;
+			sourceTree = "<group>";
+		};
+		A78D506F2024425600FB4739 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A78D50702024425600FB4739 /* TestStaticLibrary_1.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		A7BE535420217E3D008FE192 /* Frameworks */ = {
@@ -357,17 +381,20 @@
 					"$(PROJECT_DIR)/Libs",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
 				);
+				HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/libTestStaticLibrary",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuan.test.MainProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MainProject/MainProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
 			};
 			name = Debug;
 		};
@@ -382,16 +409,19 @@
 					"$(PROJECT_DIR)/Libs",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
 				);
+				HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/libTestStaticLibrary",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuan.test.MainProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/Library;
 			};
 			name = Release;
 		};

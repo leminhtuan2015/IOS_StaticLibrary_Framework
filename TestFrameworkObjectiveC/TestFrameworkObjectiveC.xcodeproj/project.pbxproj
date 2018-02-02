@@ -7,36 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = A78D50042023FA8300FB4739 /* StaticLibrary.m */; };
-		A78D503C2024380500FB4739 /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A78D500620240BE700FB4739 /* StaticLibrary.h */; };
-		A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE5378202199E3008FE192 /* TestStaticLib.m */; };
-		A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7BE5377202199E3008FE192 /* TestStaticLib.h */; };
+		A78D504C202438C800FB4739 /* TestFrameworkObjectiveC.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D504A202438C800FB4739 /* TestFrameworkObjectiveC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A78D50532024391900FB4739 /* TestFrameworkObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = A78D50522024391900FB4739 /* TestFrameworkObjectiveC.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A7BE5372202199E3008FE192 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				A78D503C2024380500FB4739 /* StaticLibrary.h in CopyFiles */,
-				A7BE537A202199E3008FE192 /* TestStaticLib.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		A78D50042023FA8300FB4739 /* StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibrary.m; sourceTree = "<group>"; };
-		A78D500620240BE700FB4739 /* StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
-		A7BE5374202199E3008FE192 /* libTestStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7BE5377202199E3008FE192 /* TestStaticLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStaticLib.h; sourceTree = "<group>"; };
-		A7BE5378202199E3008FE192 /* TestStaticLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStaticLib.m; sourceTree = "<group>"; };
+		A78D5047202438C800FB4739 /* TestFrameworkObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFrameworkObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78D504A202438C800FB4739 /* TestFrameworkObjectiveC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameworkObjectiveC.h; sourceTree = "<group>"; };
+		A78D504B202438C800FB4739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78D50522024391900FB4739 /* TestFrameworkObjectiveC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkObjectiveC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A7BE5371202199E3008FE192 /* Frameworks */ = {
+		A78D5043202438C800FB4739 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,100 +29,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7BE536B202199E3008FE192 = {
+		A78D503D202438C800FB4739 = {
 			isa = PBXGroup;
 			children = (
-				A7BE5376202199E3008FE192 /* TestStaticLib */,
-				A7BE5375202199E3008FE192 /* Products */,
+				A78D5049202438C800FB4739 /* TestFrameworkObjectiveC */,
+				A78D5048202438C800FB4739 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A7BE5375202199E3008FE192 /* Products */ = {
+		A78D5048202438C800FB4739 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7BE5374202199E3008FE192 /* libTestStaticLib.a */,
+				A78D5047202438C800FB4739 /* TestFrameworkObjectiveC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7BE5376202199E3008FE192 /* TestStaticLib */ = {
+		A78D5049202438C800FB4739 /* TestFrameworkObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
-				A7BE5377202199E3008FE192 /* TestStaticLib.h */,
-				A7BE5378202199E3008FE192 /* TestStaticLib.m */,
-				A78D500620240BE700FB4739 /* StaticLibrary.h */,
-				A78D50042023FA8300FB4739 /* StaticLibrary.m */,
+				A78D504A202438C800FB4739 /* TestFrameworkObjectiveC.h */,
+				A78D50522024391900FB4739 /* TestFrameworkObjectiveC.m */,
+				A78D504B202438C800FB4739 /* Info.plist */,
 			);
-			path = TestStaticLib;
+			path = TestFrameworkObjectiveC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A78D5044202438C800FB4739 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78D504C202438C800FB4739 /* TestFrameworkObjectiveC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A7BE5373202199E3008FE192 /* TestStaticLib */ = {
+		A78D5046202438C800FB4739 /* TestFrameworkObjectiveC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7BE537D202199E3008FE192 /* Build configuration list for PBXNativeTarget "TestStaticLib" */;
+			buildConfigurationList = A78D504F202438C800FB4739 /* Build configuration list for PBXNativeTarget "TestFrameworkObjectiveC" */;
 			buildPhases = (
-				A7BE5370202199E3008FE192 /* Sources */,
-				A7BE5371202199E3008FE192 /* Frameworks */,
-				A7BE5372202199E3008FE192 /* CopyFiles */,
+				A78D5042202438C800FB4739 /* Sources */,
+				A78D5043202438C800FB4739 /* Frameworks */,
+				A78D5044202438C800FB4739 /* Headers */,
+				A78D5045202438C800FB4739 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestStaticLib;
-			productName = TestStaticLib;
-			productReference = A7BE5374202199E3008FE192 /* libTestStaticLib.a */;
-			productType = "com.apple.product-type.library.static";
+			name = TestFrameworkObjectiveC;
+			productName = TestFrameworkObjectiveC;
+			productReference = A78D5047202438C800FB4739 /* TestFrameworkObjectiveC.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A7BE536C202199E3008FE192 /* Project object */ = {
+		A78D503E202438C800FB4739 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Fuji;
 				TargetAttributes = {
-					A7BE5373202199E3008FE192 = {
+					A78D5046202438C800FB4739 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = A7BE536F202199E3008FE192 /* Build configuration list for PBXProject "TestStaticLib" */;
+			buildConfigurationList = A78D5041202438C800FB4739 /* Build configuration list for PBXProject "TestFrameworkObjectiveC" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A7BE536B202199E3008FE192;
-			productRefGroup = A7BE5375202199E3008FE192 /* Products */;
+			mainGroup = A78D503D202438C800FB4739;
+			productRefGroup = A78D5048202438C800FB4739 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7BE5373202199E3008FE192 /* TestStaticLib */,
+				A78D5046202438C800FB4739 /* TestFrameworkObjectiveC */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A78D5045202438C800FB4739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		A7BE5370202199E3008FE192 /* Sources */ = {
+		A78D5042202438C800FB4739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7BE5379202199E3008FE192 /* TestStaticLib.m in Sources */,
-				A78D50052023FA8300FB4739 /* StaticLibrary.m in Sources */,
+				A78D50532024391900FB4739 /* TestFrameworkObjectiveC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A7BE537B202199E3008FE192 /* Debug */ = {
+		A78D504D202438C800FB4739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,6 +172,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -191,10 +194,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A7BE537C202199E3008FE192 /* Release */ = {
+		A78D504E202438C800FB4739 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,6 +230,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -240,38 +246,47 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A7BE537E202199E3008FE192 /* Debug */ = {
+		A78D5050202438C800FB4739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U62UST9Z6P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestFrameworkObjectiveC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.framework.objc.TestFrameworkObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TestStaticLib/TestStaticLib-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A7BE537F202199E3008FE192 /* Release */ = {
+		A78D5051202438C800FB4739 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U62UST9Z6P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestFrameworkObjectiveC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.framework.objc.TestFrameworkObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TestStaticLib/TestStaticLib-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -279,25 +294,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7BE536F202199E3008FE192 /* Build configuration list for PBXProject "TestStaticLib" */ = {
+		A78D5041202438C800FB4739 /* Build configuration list for PBXProject "TestFrameworkObjectiveC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7BE537B202199E3008FE192 /* Debug */,
-				A7BE537C202199E3008FE192 /* Release */,
+				A78D504D202438C800FB4739 /* Debug */,
+				A78D504E202438C800FB4739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7BE537D202199E3008FE192 /* Build configuration list for PBXNativeTarget "TestStaticLib" */ = {
+		A78D504F202438C800FB4739 /* Build configuration list for PBXNativeTarget "TestFrameworkObjectiveC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7BE537E202199E3008FE192 /* Debug */,
-				A7BE537F202199E3008FE192 /* Release */,
+				A78D5050202438C800FB4739 /* Debug */,
+				A78D5051202438C800FB4739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A7BE536C202199E3008FE192 /* Project object */;
+	rootObject = A78D503E202438C800FB4739 /* Project object */;
 }

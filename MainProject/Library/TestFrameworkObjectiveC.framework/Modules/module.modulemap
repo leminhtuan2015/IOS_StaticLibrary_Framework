@@ -1,0 +1,6 @@
+framework module TestFrameworkObjectiveC {
+  umbrella header "TestFrameworkObjectiveC.h"
+
+  export *
+  module * { export * }
+}
